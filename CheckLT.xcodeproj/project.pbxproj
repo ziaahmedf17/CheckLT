@@ -27,11 +27,33 @@
 		185F79422E70DA15006DDFAD /* CheckLT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckLT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185F794F2E70DA17006DDFAD /* CheckLTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckLTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		185F79592E70DA17006DDFAD /* CheckLTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckLTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CCA6E22E718D1F005C903C /* CheckLT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CheckLT-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		18CCA6E52E718DB6005C903C /* Exceptions for "CheckLT" folder in "CheckLT" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FontStyles.swift,
+			);
+			target = 185F79412E70DA15006DDFAD /* CheckLT */;
+		};
+		18CCA6E62E718DB6005C903C /* Exceptions for "CheckLT" folder in "CheckLTTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FontStyles.swift,
+			);
+			target = 185F794E2E70DA17006DDFAD /* CheckLTTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		185F79442E70DA15006DDFAD /* CheckLT */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				18CCA6E52E718DB6005C903C /* Exceptions for "CheckLT" folder in "CheckLT" target */,
+				18CCA6E62E718DB6005C903C /* Exceptions for "CheckLT" folder in "CheckLTTests" target */,
+			);
 			path = CheckLT;
 			sourceTree = "<group>";
 		};
@@ -75,7 +97,8 @@
 		185F79392E70DA15006DDFAD = {
 			isa = PBXGroup;
 			children = (
-				185F79442E70DA15006DDFAD /* CheckLT */,
+				18CCA6E22E718D1F005C903C /* CheckLT-Info.plist */,
+				18CCA6DB2E718BA0005C903C /* New Group */,
 				185F79522E70DA17006DDFAD /* CheckLTTests */,
 				185F795C2E70DA17006DDFAD /* CheckLTUITests */,
 				185F79432E70DA15006DDFAD /* Products */,
@@ -90,6 +113,14 @@
 				185F79592E70DA17006DDFAD /* CheckLTUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		18CCA6DB2E718BA0005C903C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				185F79442E70DA15006DDFAD /* CheckLT */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,11 +431,13 @@
 				DEVELOPMENT_TEAM = G97MSM9WR8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CheckLT-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +461,13 @@
 				DEVELOPMENT_TEAM = G97MSM9WR8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CheckLT-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

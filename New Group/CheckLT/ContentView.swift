@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    init(){
+        for fontFamily in UIFont.familyNames
+        {
+            for font in UIFont.fontNames(forFamilyName: fontFamily)
+            {
+                print("-- \(font)")
+            }
+        }
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")

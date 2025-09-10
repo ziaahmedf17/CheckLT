@@ -8,24 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    init(){
-        for fontFamily in UIFont.familyNames
-        {
-            for font in UIFont.fontNames(forFamilyName: fontFamily)
-            {
-                print("-- \(font)")
-            }
-        }
-    }
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            
+            TaskListView()
+                .tabItem{
+                    Image("ic-tasklist")
+                        .renderingMode(.template)
+                }
+            InboxView()
+                .tabItem{
+                    Image("ic-inbox")
+                        .renderingMode(.template)
+                }
+            RemindersView()
+                .tabItem{
+                    Image("ic-reminders")
+                        .renderingMode(.template)
+                }
+            SettingsView()
+                .tabItem{
+                    Image("ic-settings")
+                        .renderingMode(.template)
+                }
         }
-        .padding()
     }
 }
 

@@ -10,6 +10,22 @@ import SwiftUI
 struct TaskListView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading){
+                    Image("ic-hamburger")
+                }
+                
+                ToolbarItem(placement: .principal){
+                    Text("Today")
+                        .font(.navTitle)
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Image("ic-dots")
+                }
+            }
+            .navigationTitle("Today")
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 

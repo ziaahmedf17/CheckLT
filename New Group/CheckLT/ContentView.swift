@@ -12,8 +12,9 @@ struct ContentView: View {
     var body: some View {
         TabView {
             
-            TaskListView()
-                .tabItem{
+            NavigationView{
+                TaskListView()
+            }.tabItem{
                     Image("ic-tasklist")
                         .renderingMode(.template)
                 }

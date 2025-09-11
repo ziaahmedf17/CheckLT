@@ -31,13 +31,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		18CCA6E52E718DB6005C903C /* Exceptions for "CheckLT" folder in "CheckLT" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				FontStyles.swift,
-			);
-			target = 185F79412E70DA15006DDFAD /* CheckLT */;
-		};
 		18CCA6E62E718DB6005C903C /* Exceptions for "CheckLT" folder in "CheckLTTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -51,7 +44,6 @@
 		185F79442E70DA15006DDFAD /* CheckLT */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				18CCA6E52E718DB6005C903C /* Exceptions for "CheckLT" folder in "CheckLT" target */,
 				18CCA6E62E718DB6005C903C /* Exceptions for "CheckLT" folder in "CheckLTTests" target */,
 			);
 			path = CheckLT;

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TaskListView: View {
+    var tasks = Task.getDummyTasks()
+    
     var body: some View {
         
         ZStack{

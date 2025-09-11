@@ -15,7 +15,24 @@ struct TaskListView: View {
         ZStack{
             Color("Background")
                 .ignoresSafeArea()
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            
+            ScrollView{
+                VStack{
+                    HStack{
+                        Text("Toda")
+                        Spacer()
+                        Text("\(tasks.count)")
+                        Image("ic-downarrow")
+                    }
+                    .font(Font.taskText)
+                    
+                    ForEach(tasks){ task in
+                        HStack{
+                            
+                        }
+                    }
+                }
+            }
         }
         .toolbar{
                 ToolbarItem(placement: .navigationBarLeading){

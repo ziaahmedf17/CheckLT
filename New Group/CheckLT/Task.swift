@@ -7,8 +7,10 @@
 
 import Foundation
 
-struct Task {
+struct Task: Identifiable {
+    var id = UUID()
     var title: String
+    var isChecked: Bool = false
     static func getDummyTasks() -> [Task]{
         var tasks = [Task]()
         tasks.append(Task(title: "Check emails"))
